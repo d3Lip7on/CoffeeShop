@@ -1,0 +1,105 @@
+.top {
+	background-image: url('../images/video.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 80% 100%;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: end;
+		padding-top: 147px;
+		padding-bottom: 166px;
+	}
+
+	&__content {
+		max-width: 530px;
+	}
+
+	&__heading {
+		@include text($colorWhite, $righteous, 72px, 400, 130%);
+		text-transform: capitalize;
+		margin-bottom: 32px;
+	}
+
+	&__text {
+		@include text($colorGrey, $urbanist, 20px, 500, 180%);
+		text-transform: capitalize;
+		margin-bottom: 64px;
+	}
+
+	&__button {
+	}
+
+	&__video {
+		margin-right: 40px;
+		&-text {
+			@include text($colorWhite, $inter, 16px, 400, normal);
+			text-transform: uppercase;
+		}
+	}
+
+	&__circle {
+		margin: 0 auto;
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		border: 2px solid $colorWhite;
+		background-color: transparent;
+		position: relative;
+		cursor: pointer;
+		margin-bottom: 20px;
+	}
+
+	&__arrow {
+		width: 0px;
+		height: 0px;
+		background-color: transparent;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-left: 18px solid $colorWhite; /* Левая граница - стрелка влево */
+		border-top: 14px solid transparent; /* Правая граница - стрелка вправо */
+		border-bottom: 14px solid transparent; /* Нижняя граница - цвет стрелки */
+	}
+
+	@media screen and (max-width: 768px) {
+		background-size: cover;
+		&__inner {
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 120px;
+			padding-bottom: 130px;
+		}
+
+		&__content {
+			margin-bottom: 60px;
+			text-align: center;
+		}
+		&__heading {
+			font-size: 3.5rem;
+		}
+		&__button {
+			margin: 0 auto;
+		}
+		&__video {
+			margin: 0;
+		}
+	}
+
+	@media screen and (max-width: 550px) {
+		&__inner {
+			padding-top: 80px;
+			padding-bottom: 90px;
+		}
+
+		&__heading {
+			font-size: 2.5rem;
+		}
+
+		&__text {
+			font-size: 1rem;
+		}
+	}
+}

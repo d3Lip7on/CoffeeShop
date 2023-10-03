@@ -16,17 +16,23 @@
 		@media screen and (max-width: 1100px) {
 			display: none;
 		}
+
 		&-list {
 			display: flex;
 			align-items: center;
 			gap: 48px;
 
+			animation-name: menu;
+			animation-duration: 300ms;
+			animation-timing-function: ease-out;
+			animation-direction: reverse;
+			animation-play-state: paused;
+
 			&_collapsed {
 				flex-direction: column;
-				animation-name: menu;
-				animation-duration: 300ms;
+				animation-direction: normal;
+				animation-play-state: running;
 				animation-fill-mode: forwards;
-				animation-timing-function: ease-out;
 			}
 		}
 

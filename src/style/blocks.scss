@@ -33,12 +33,15 @@
 .button {
 	background-color: $colorBrown;
 	padding: 20px 36px;
+	@include text($colorWhite, $inter, 18px, 700, normal);
+	text-transform: uppercase;
 }
 
 .burger {
 	display: none;
 	background-color: transparent;
 	order: 2;
+	transition: all 500ms;
 	span {
 		background: $colorBrown;
 		width: 25px;
@@ -48,5 +51,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: 5px;
+	}
+
+	&_rotated {
+		transform: rotate(90deg);
 	}
 }

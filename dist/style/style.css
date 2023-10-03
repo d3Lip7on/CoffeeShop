@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -25,6 +26,9 @@ ol {
 
 button {
   cursor: pointer;
+  color: inherit;
+  background-color: transparent;
+  display: block;
 }
 
 @keyframes menu {
@@ -67,12 +71,19 @@ button {
 .button {
   background-color: #c99e71;
   padding: 20px 36px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .burger {
   display: none;
   background-color: transparent;
   order: 2;
+  transition: all 500ms;
 }
 .burger span {
   background: #c99e71;
@@ -85,6 +96,9 @@ button {
     flex-direction: column;
     gap: 5px;
   }
+}
+.burger_rotated {
+  transform: rotate(90deg);
 }
 
 .header {
@@ -109,13 +123,17 @@ button {
   display: flex;
   align-items: center;
   gap: 48px;
+  animation-name: menu;
+  animation-duration: 300ms;
+  animation-timing-function: ease-out;
+  animation-direction: reverse;
+  animation-play-state: paused;
 }
 .header-menu-list_collapsed {
   flex-direction: column;
-  animation-name: menu;
-  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-play-state: running;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
 }
 .header-menu__item {
   color: #fff;
@@ -133,6 +151,112 @@ button {
   width: 100%;
   order: 3;
   display: block;
+}
+
+.top {
+  background-image: url("../images/video.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80% 100%;
+}
+.top__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-top: 147px;
+  padding-bottom: 166px;
+}
+.top__content {
+  max-width: 530px;
+}
+.top__heading {
+  color: #fff;
+  font-family: "Righteous", cursive;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 130%;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+.top__text {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 180%;
+  text-transform: capitalize;
+  margin-bottom: 64px;
+}
+.top__video {
+  margin-right: 40px;
+}
+.top__video-text {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.top__circle {
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.top__arrow {
+  width: 0px;
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-left: 18px solid #fff; /* Левая граница - стрелка влево */
+  border-top: 14px solid transparent; /* Правая граница - стрелка вправо */
+  border-bottom: 14px solid transparent; /* Нижняя граница - цвет стрелки */
+}
+@media screen and (max-width: 768px) {
+  .top {
+    background-size: cover;
+  }
+  .top__inner {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 130px;
+  }
+  .top__content {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .top__heading {
+    font-size: 3.5rem;
+  }
+  .top__button {
+    margin: 0 auto;
+  }
+  .top__video {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .top__inner {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+  .top__heading {
+    font-size: 2.5rem;
+  }
+  .top__text {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
