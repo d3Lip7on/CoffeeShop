@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+header,
+section,
+footer {
+  padding: 0 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@keyframes menu {
+  from {
+    gap: 0;
+  }
+  to {
+    gap: 48px;
+  }
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #fff;
+  font-family: "Righteous", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.subtitle {
+  color: #c99e71;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Urbanist", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 180%;
+  text-transform: capitalize;
+}
+
+.button {
+  background-color: #c99e71;
+  padding: 20px 36px;
+}
+
+.burger {
+  display: none;
+  background-color: transparent;
+  order: 2;
+}
+.burger span {
+  background: #c99e71;
+  width: 25px;
+  height: 3px;
+}
+@media screen and (max-width: 1100px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.header {
+  background: #1c1814;
+}
+.header__container {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px;
+}
+@media screen and (max-width: 1100px) {
+  .header-menu {
+    display: none;
+  }
+}
+.header-menu-list {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.header-menu-list_collapsed {
+  flex-direction: column;
+  animation-name: menu;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.header-menu__item {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 200ms;
+}
+.header-menu__item:hover {
+  color: #c99e71;
+  font-weight: 700;
+}
+.header-menu_collapsed {
+  width: 100%;
+  order: 3;
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

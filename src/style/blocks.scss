@@ -1,0 +1,52 @@
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.logo {
+}
+
+.title {
+	color: $colorWhite;
+	font-family: 'Righteous', cursive;
+	font-size: calc(48px / 16px) * 1rem;
+	font-weight: 400;
+	line-height: 130%;
+}
+
+.subtitle {
+	color: $colorBrown;
+	font-family: 'Urbanist', sans-serif;
+	font-size: calc(18px / 16px) * 1rem;
+	font-weight: 600;
+}
+
+.description {
+	color: $colorGrey;
+	font-family: 'Urbanist', sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 180%;
+	text-transform: capitalize;
+}
+
+.button {
+	background-color: $colorBrown;
+	padding: 20px 36px;
+}
+
+.burger {
+	display: none;
+	background-color: transparent;
+	order: 2;
+	span {
+		background: $colorBrown;
+		width: 25px;
+		height: 3px;
+	}
+	@media screen and (max-width: 1100px) {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+}
