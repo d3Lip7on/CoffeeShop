@@ -1,0 +1,58 @@
+.advantages {
+	background-color: $colorDarkBackground;
+
+	&__inner {
+		padding: 140px 0;
+	}
+
+	&__cards {
+		display: flex;
+		gap: 36px;
+		justify-content: space-between;
+	}
+
+	&__card {
+		flex: 0 1 366px;
+	}
+
+	&__heading {
+		display: flex;
+		gap: 12px;
+		margin-bottom: 24px;
+	}
+
+	&__number {
+		@include text($colorBrown, $righteous, 24px, 400, normal);
+	}
+
+	&__title {
+		@include text($colorWhite, $righteous, 24px, 400, normal);
+	}
+
+	&__img {
+		width: 100%;
+		min-width: 200px;
+	}
+
+	@media screen and (max-width: 900px) {
+		&__inner {
+			padding: 100px 0;
+		}
+		&__number {
+			font-size: 1.3rem;
+		}
+		&__title {
+			font-size: 1.3rem;
+		}
+	}
+
+	@media screen and (max-width: 790px) {
+		&__inner {
+			padding: 80px 0;
+		}
+		&__cards {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+}

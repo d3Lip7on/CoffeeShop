@@ -259,4 +259,62 @@ button {
   }
 }
 
+.advantages {
+  background-color: #14110e;
+}
+.advantages__inner {
+  padding: 140px 0;
+}
+.advantages__cards {
+  display: flex;
+  gap: 36px;
+  justify-content: space-between;
+}
+.advantages__card {
+  flex: 0 1 366px;
+}
+.advantages__heading {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.advantages__number {
+  color: #c99e71;
+  font-family: "Righteous", cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: normal;
+}
+.advantages__title {
+  color: #fff;
+  font-family: "Righteous", cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: normal;
+}
+.advantages__img {
+  width: 100%;
+  min-width: 200px;
+}
+@media screen and (max-width: 900px) {
+  .advantages__inner {
+    padding: 100px 0;
+  }
+  .advantages__number {
+    font-size: 1.3rem;
+  }
+  .advantages__title {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 790px) {
+  .advantages__inner {
+    padding: 80px 0;
+  }
+  .advantages__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
