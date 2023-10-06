@@ -1,9 +1,19 @@
+main {
+	background-color: $colorDarkBackground;
+}
+
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
 }
 
-.logo {
+.text_brown {
+	color: $colorBrown;
+}
+
+.text_strikethrough {
+	color: $colorWhite;
+	text-decoration: line-through;
 }
 
 .title {

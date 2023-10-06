@@ -1,0 +1,79 @@
+.popular-product {
+	&__inner {
+		text-align: center;
+		padding-bottom: 140px;
+	}
+
+	&__subtitle {
+		margin-bottom: 12px;
+	}
+
+	&__title {
+		margin-bottom: 104px;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		gap: 15px;
+		margin-bottom: 56px;
+	}
+
+	&__item {
+		background-color: #121315;
+		padding: 48px 48px 36px 48px;
+		&-img {
+			margin-bottom: 37px;
+			width: 100%;
+		}
+
+		&-title {
+			@include text($colorWhite, $righteous, 24px, 400, normal);
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+
+		&-info {
+			@include text($colorWhite, $urbanist, 18px, 600, normal);
+			text-transform: uppercase;
+		}
+	}
+
+	&__rating {
+		color: $colorWhite;
+		display: flex;
+		justify-content: center;
+		gap: 13px;
+		margin-bottom: 20px;
+
+		&-title {
+			color: $colorBrown;
+			text-transform: uppercase;
+		}
+	}
+
+	&__stars {
+		display: flex;
+		gap: 4px;
+	}
+
+	&__button {
+		margin: 0 auto;
+	}
+
+	@media screen and (max-width: 1100px) {
+		&__item-title {
+			font-size: 1.2rem;
+		}
+
+		&__item-info {
+			font-size: 1rem;
+		}
+	}
+
+	// @media screen and (max-width: 980px) {
+	// 	&__items{
+	// 		flex-wrap: ;
+	// 	}
+	// }
+}
