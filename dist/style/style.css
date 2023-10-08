@@ -91,6 +91,9 @@ main {
   line-height: normal;
   text-transform: uppercase;
 }
+.button:hover {
+  background-color: #bb854c;
+}
 
 .burger {
   display: none;
@@ -136,14 +139,22 @@ main {
   display: flex;
   align-items: center;
   gap: 48px;
+}
+.header-menu-list_collapsed {
+  flex-direction: column;
+}
+.header-menu-list_closing {
   animation-name: menu;
   animation-duration: 300ms;
   animation-timing-function: ease-out;
   animation-direction: reverse;
-  animation-play-state: paused;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
 }
-.header-menu-list_collapsed {
-  flex-direction: column;
+.header-menu-list_opening {
+  animation-name: menu;
+  animation-duration: 300ms;
+  animation-timing-function: ease-out;
   animation-direction: normal;
   animation-play-state: running;
   animation-fill-mode: forwards;

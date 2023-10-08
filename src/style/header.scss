@@ -22,14 +22,23 @@
 			align-items: center;
 			gap: 48px;
 
-			animation-name: menu;
-			animation-duration: 300ms;
-			animation-timing-function: ease-out;
-			animation-direction: reverse;
-			animation-play-state: paused;
-
 			&_collapsed {
 				flex-direction: column;
+			}
+
+			&_closing {
+				animation-name: menu;
+				animation-duration: 300ms;
+				animation-timing-function: ease-out;
+				animation-direction: reverse;
+				animation-play-state: running;
+				animation-fill-mode: forwards;
+			}
+
+			&_opening {
+				animation-name: menu;
+				animation-duration: 300ms;
+				animation-timing-function: ease-out;
 				animation-direction: normal;
 				animation-play-state: running;
 				animation-fill-mode: forwards;

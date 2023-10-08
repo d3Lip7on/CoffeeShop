@@ -45,6 +45,10 @@ main {
 	padding: 20px 36px;
 	@include text($colorWhite, $inter, 18px, 700, normal);
 	text-transform: uppercase;
+
+	&:hover {
+		background-color: darken($colorBrown, 10%);
+	}
 }
 
 .burger {
