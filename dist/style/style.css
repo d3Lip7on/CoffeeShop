@@ -506,6 +506,24 @@ main {
   text-align: center;
   margin-bottom: 56px;
 }
+@media screen and (max-width: 1189px) {
+  .coffee-menu__menu {
+    margin-bottom: 80px;
+  }
+}
+.coffee-menu__button {
+  margin: 0 auto;
+  display: none;
+}
+@media screen and (max-width: 1189px) {
+  .coffee-menu__button {
+    display: block;
+  }
+}
+.coffee-menu__button_hidden {
+  display: none;
+}
+
 .menu {
   display: flex;
   justify-content: center;
@@ -515,6 +533,11 @@ main {
 .menu__item {
   flex: 0 1 565px;
 }
+@media screen and (max-width: 768px) {
+  .menu {
+    gap: 20px;
+  }
+}
 
 .coffee-item {
   display: flex;
@@ -523,6 +546,14 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+}
+@media screen and (max-width: 1189px) {
+  .coffee-item {
+    display: none;
+  }
+}
+.coffee-item_active {
+  display: flex;
 }
 @media screen and (max-width: 460px) {
   .coffee-item__img {

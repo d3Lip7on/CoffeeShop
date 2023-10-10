@@ -14,6 +14,22 @@
 	}
 
 	&__menu {
+		@media screen and (max-width: 1189px) {
+			margin-bottom: 80px;
+		}
+	}
+
+	&__button {
+		margin: 0 auto;
+		display: none;
+
+		@media screen and (max-width: 1189px) {
+			display: block;
+		}
+
+		&_hidden {
+			display: none;
+		}
 	}
 }
 
@@ -25,6 +41,9 @@
 	&__item {
 		flex: 0 1 565px;
 	}
+	@media screen and (max-width: 768px) {
+		gap: 20px;
+	}
 }
 
 .coffee-item {
@@ -34,6 +53,14 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 10px;
+
+	@media screen and (max-width: 1189px) {
+		display: none;
+	}
+
+	&_active {
+		display: flex;
+	}
 
 	&__img {
 		@media screen and (max-width: 460px) {
