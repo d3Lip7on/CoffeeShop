@@ -64,6 +64,21 @@ main {
   font-weight: 400;
   line-height: 130%;
 }
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
 
 .subtitle {
   color: #c99e71;
@@ -79,6 +94,16 @@ main {
   font-weight: 500;
   line-height: 180%;
   text-transform: capitalize;
+}
+@media screen and (max-width: 600px) {
+  .description {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .description {
+    font-size: 0.7rem;
+  }
 }
 
 .button {
@@ -119,6 +144,9 @@ main {
 
 .header {
   background: #1c1814;
+}
+.header img {
+  cursor: pointer;
 }
 .header__container {
   max-width: 1320px;
@@ -405,6 +433,65 @@ main {
   }
   .popular-product__item-info {
     font-size: 1rem;
+  }
+}
+
+.coffee-machine__inner {
+  background-color: #1c1814;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 72px;
+  padding-bottom: 84px;
+}
+@media screen and (max-width: 1000px) {
+  .coffee-machine__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.coffee-machine__img {
+  margin-left: 40px;
+}
+@media screen and (max-width: 1000px) {
+  .coffee-machine__img {
+    margin-left: 0;
+    order: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .coffee-machine__img {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .coffee-machine__img {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .coffee-machine__img {
+    width: 140px;
+  }
+}
+.coffee-machine__content {
+  max-width: 535px;
+}
+@media screen and (max-width: 1000px) {
+  .coffee-machine__content {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+}
+.coffee-machine__title {
+  margin-bottom: 36px;
+}
+.coffee-machine__description {
+  margin-bottom: 36px;
+}
+@media screen and (max-width: 1000px) {
+  .coffee-machine__button {
+    margin: 0 auto;
   }
 }
 

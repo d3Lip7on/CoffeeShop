@@ -1,0 +1,58 @@
+.coffee-machine {
+	&__inner {
+		background-color: #1c1814;
+		display: flex;
+		justify-content: space-around;
+		padding-top: 72px;
+		padding-bottom: 84px;
+
+		@media screen and (max-width: 1000px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__img {
+		margin-left: 40px;
+		@media screen and (max-width: 1000px) {
+			margin-left: 0;
+			order: 1;
+		}
+
+		@media screen and (max-width: 768px) {
+			width: 180px;
+		}
+
+		@media screen and (max-width: 600px) {
+			width: 160px;
+		}
+
+		@media screen and (max-width: 460px) {
+			width: 140px;
+		}
+	}
+
+	&__content {
+		max-width: 535px;
+
+		@media screen and (max-width: 1000px) {
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 70px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 36px;
+	}
+
+	&__description {
+		margin-bottom: 36px;
+	}
+
+	&__button {
+		@media screen and (max-width: 1000px) {
+			margin: 0 auto;
+		}
+	}
+}

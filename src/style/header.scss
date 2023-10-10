@@ -1,6 +1,9 @@
 .header {
 	background: #1c1814;
 
+	img {
+		cursor: pointer;
+	}
 	&__container {
 		max-width: 1320px;
 		margin: 0 auto;
