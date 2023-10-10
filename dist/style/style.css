@@ -495,4 +495,75 @@ main {
   }
 }
 
+.coffee-menu__inner {
+  padding: 140px 0;
+}
+.coffee-menu__subtitle {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.coffee-menu__title {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.menu__item {
+  flex: 0 1 565px;
+}
+
+.coffee-item {
+  display: flex;
+  padding: 24px;
+  border: 1px solid #32323d;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 460px) {
+  .coffee-item__img {
+    width: 50px;
+  }
+}
+.coffee-item__title {
+  color: #fff;
+  font-family: "Righteous", cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: -80px;
+}
+@media screen and (max-width: 768px) {
+  .coffee-item__title {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .coffee-item__title {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .coffee-item__title {
+    font-size: 1rem;
+  }
+}
+.coffee-item__price {
+  color: #c99e71;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: normal;
+}
+@media screen and (max-width: 600px) {
+  .coffee-item__price {
+    font-size: 1rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
