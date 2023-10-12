@@ -498,6 +498,16 @@ main {
 .coffee-menu__inner {
   padding: 140px 0;
 }
+@media screen and (max-width: 768px) {
+  .coffee-menu__inner {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  .coffee-menu__inner {
+    padding: 60px 0;
+  }
+}
 .coffee-menu__subtitle {
   text-align: center;
   margin-bottom: 12px;
@@ -509,6 +519,16 @@ main {
 @media screen and (max-width: 1189px) {
   .coffee-menu__menu {
     margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .coffee-menu__menu {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .coffee-menu__menu {
+    margin-bottom: 40px;
   }
 }
 .coffee-menu__button {
