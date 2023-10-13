@@ -1,0 +1,126 @@
+.testimonial {
+	&__inner {
+		padding-bottom: 145px;
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	&__subtitle {
+		text-align: center;
+		margin-bottom: 12px;
+	}
+
+	&-cards {
+		display: flex;
+		justify-content: space-between;
+		gap: 40px;
+		margin-bottom: 36px;
+		&__card {
+			flex: 0 1 565px;
+		}
+	}
+
+	&-card {
+		background: #1c1814;
+		padding: 40px;
+		&__content {
+			display: flex;
+			justify-content: space-between;
+			gap: 15px;
+			margin-bottom: 30px;
+		}
+
+		&__img {
+		}
+
+		&__description {
+		}
+
+		&__additional-info {
+			display: flex;
+			justify-content: space-between;
+			align-items: end;
+		}
+
+		&__personal-data {
+		}
+		&__name {
+			margin-bottom: 4px;
+			@include text($colorWhite, $urbanist, 18px, 500, 120%);
+		}
+		&__profession {
+			@include text(rgba(255, 255, 255, 0.5), $urbanist, 14px, 500, 180%);
+			text-transform: capitalize;
+		}
+	}
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+	}
+
+	&__scroll-position {
+	}
+
+	&__number-of-people {
+		@include text($colorBrown, $urbanist, 20px, 600, 135%);
+		margin-bottom: 20px;
+	}
+
+	&__indicator {
+		display: block;
+		width: 120px;
+		height: 4px;
+		background: #1c1814;
+		position: relative;
+
+		&::before {
+			content: '';
+			width: 50px;
+			height: 4px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: $colorBrown;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 16px;
+	}
+
+	&__button {
+		width: 56px;
+		height: 56px;
+		background-color: $colorBrown;
+		background-image: url('../images/testimonial-btn.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 50%;
+	}
+
+	&__button:hover {
+		background-color: #121315;
+		background-image: url('../images/testimonial-btn-active.svg');
+	}
+
+	&__btn-left {
+		transform: rotate(180deg);
+	}
+
+	&__btn-left:hover {
+		transform: none;
+	}
+
+	&__btn-right {
+	}
+
+	&__btn-right:hover {
+		transform: rotate(180deg);
+	}
+}

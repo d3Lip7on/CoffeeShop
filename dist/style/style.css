@@ -115,6 +115,8 @@ main {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  transition-property: background;
+  transition-duration: 150ms;
 }
 .button:hover {
   background-color: #bb854c;
@@ -692,6 +694,113 @@ main {
   .coffee-item__price {
     font-size: 1rem;
   }
+}
+
+.testimonial__inner {
+  padding-bottom: 145px;
+}
+.testimonial__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.testimonial__subtitle {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.testimonial-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 36px;
+}
+.testimonial-cards__card {
+  flex: 0 1 565px;
+}
+.testimonial-card {
+  background: #1c1814;
+  padding: 40px;
+}
+.testimonial-card__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.testimonial-card__additional-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.testimonial-card__name {
+  margin-bottom: 4px;
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 120%;
+}
+.testimonial-card__profession {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Urbanist", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 180%;
+  text-transform: capitalize;
+}
+.testimonial__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.testimonial__number-of-people {
+  color: #c99e71;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 135%;
+  margin-bottom: 20px;
+}
+.testimonial__indicator {
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: #1c1814;
+  position: relative;
+}
+.testimonial__indicator::before {
+  content: "";
+  width: 50px;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #c99e71;
+}
+.testimonial__buttons {
+  display: flex;
+  gap: 16px;
+}
+.testimonial__button {
+  width: 56px;
+  height: 56px;
+  background-color: #c99e71;
+  background-image: url("../images/testimonial-btn.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+.testimonial__button:hover {
+  background-color: #121315;
+  background-image: url("../images/testimonial-btn-active.svg");
+}
+.testimonial__btn-left {
+  transform: rotate(180deg);
+}
+.testimonial__btn-left:hover {
+  transform: none;
+}
+.testimonial__btn-right:hover {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=style.css.map */
