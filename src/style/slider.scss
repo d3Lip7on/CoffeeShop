@@ -1,0 +1,44 @@
+.slider {
+	margin: 0 auto;
+	&__indicators {
+		display: none;
+		@media screen and (max-width: 768px) {
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+		}
+	}
+
+	&__indicator {
+		width: 30px;
+		height: 4px;
+		border-radius: 2px;
+		background-color: $colorWhite;
+		transition-property: background-color;
+		transition-duration: 200ms;
+
+		&_active {
+			background-color: $colorBrown;
+		}
+	}
+
+	&__window {
+		@media screen and (max-width: 768px) {
+			width: 300px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+	}
+}
+
+.slides {
+	@media screen and (max-width: 768px) {
+		gap: 0;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+}
+
+.slide {
+}

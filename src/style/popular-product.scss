@@ -1,10 +1,13 @@
 .popular-product {
 	&__slider {
-		margin: 0 auto;
 	}
 	&__inner {
 		text-align: center;
 		padding-bottom: 140px;
+
+		@media screen and (max-width: 768px) {
+			padding-bottom: 80px;
+		}
 	}
 
 	&__subtitle {
@@ -13,6 +16,12 @@
 
 	&__title {
 		margin-bottom: 104px;
+		@media screen and (max-width: 768px) {
+			margin-bottom: 60px;
+		}
+		@media screen and (max-width: 460px) {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__items {
@@ -38,7 +47,6 @@
 			padding: 30px;
 		}
 		@media screen and (max-width: 768px) {
-			min-width: none;
 			flex-basis: 300px;
 			flex-shrink: 0;
 		}
@@ -101,7 +109,6 @@
 	}
 
 	&__slider-indicators {
-		margin: 0 auto;
 		margin-bottom: 50px;
 	}
 }

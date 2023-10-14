@@ -3,6 +3,19 @@
 
 	&__inner {
 		padding: 140px 0;
+		@media screen and (max-width: 900px) {
+			&__inner {
+				padding: 100px 0;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			padding-bottom: 60px;
+		}
+
+		@media screen and (max-width: 400px) {
+			padding-bottom: 40px;
+		}
 	}
 
 	&__cards {
@@ -35,9 +48,6 @@
 	}
 
 	@media screen and (max-width: 900px) {
-		&__inner {
-			padding: 100px 0;
-		}
 		&__number {
 			font-size: 1.3rem;
 		}
@@ -47,9 +57,6 @@
 	}
 
 	@media screen and (max-width: 790px) {
-		&__inner {
-			padding: 80px 0;
-		}
 		&__cards {
 			flex-wrap: wrap;
 			justify-content: center;
