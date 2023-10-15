@@ -27,6 +27,7 @@ let mouseX;
 
 sliderWindow.addEventListener('touchstart', (event) => {
 	// event.preventDefault();
+	slides.style.transition = 'none';
 	isMousePressed = true;
 	initialPoint = event.touches[0].clientX - rectSliderWindow.left;
 });
@@ -48,7 +49,9 @@ slider.addEventListener('touchend', (event) => {
 			indicators[indexOfActiveIndicator].classList.add('slider__indicator_active');
 		}
 	}
+
 	isMousePressed = false;
+	slides.style.transition = 'left 200ms';
 	slides.style.left = currentSlidesPoint + 'px';
 });
 

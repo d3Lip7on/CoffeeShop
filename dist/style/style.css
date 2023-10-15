@@ -118,6 +118,11 @@ main {
   transition-property: background;
   transition-duration: 150ms;
 }
+@media screen and (max-width: 460px) {
+  .button {
+    padding: 15px 20px;
+  }
+}
 .button:hover {
   background-color: #bb854c;
 }
@@ -142,6 +147,22 @@ main {
 }
 .burger_rotated {
   transform: rotate(90deg);
+}
+
+.input {
+  display: block;
+  background: #14110e;
+  padding: 16px 20px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 180%;
+}
+@media screen and (max-width: 460px) {
+  .input {
+    padding: 10px 12px;
+  }
 }
 
 .header {
@@ -325,12 +346,12 @@ main {
 }
 @media screen and (max-width: 768px) {
   .advantages__inner {
-    padding-bottom: 60px;
+    padding: 60px 0;
   }
 }
 @media screen and (max-width: 400px) {
   .advantages__inner {
-    padding-bottom: 40px;
+    padding: 40px 0;
   }
 }
 .advantages__cards {
@@ -772,6 +793,16 @@ main {
 .testimonial__inner {
   padding-bottom: 145px;
 }
+@media screen and (max-width: 768px) {
+  .testimonial__inner {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .testimonial__inner {
+    padding-bottom: 60px;
+  }
+}
 .testimonial__title {
   text-align: center;
   margin-bottom: 60px;
@@ -900,6 +931,83 @@ main {
 }
 .testimonial__btn-right:hover {
   transform: rotate(180deg);
+}
+
+.reservation__inner {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  padding-bottom: 140px;
+}
+@media screen and (max-width: 1190px) {
+  .reservation__inner {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reservation__inner {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .reservation__inner {
+    padding-bottom: 60px;
+  }
+}
+.reservation__map {
+  flex: 0 1 585px;
+}
+@media screen and (max-width: 1190px) {
+  .reservation__map {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .reservation__map {
+    height: 400px;
+  }
+}
+.reservation__form {
+  flex: 0 1 585px;
+  padding: 72px 48px;
+  text-align: center;
+  background: #1c1814;
+}
+@media screen and (max-width: 460px) {
+  .reservation__form {
+    padding: 50px 30px;
+  }
+}
+.reservation__subtitle {
+  margin-bottom: 12px;
+}
+.reservation__title {
+  margin-bottom: 56px;
+}
+@media screen and (max-width: 460px) {
+  .reservation__title {
+    margin-bottom: 30px;
+  }
+}
+.reservation__inputs {
+  margin-bottom: 56px;
+}
+@media screen and (max-width: 460px) {
+  .reservation__inputs {
+    margin-bottom: 30px;
+  }
+}
+.reservation__inputs input {
+  width: 100%;
+}
+.reservation__number-of-people {
+  margin-bottom: 24px;
+}
+.reservation__date {
+  margin-bottom: 24px;
+}
+.reservation__button {
+  margin: 0 auto;
 }
 
 .slider {
