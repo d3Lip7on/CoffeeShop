@@ -13,13 +13,34 @@
 		margin-bottom: 12px;
 	}
 
+	&__window {
+		overflow: hidden;
+		@media screen and (max-width: 1000px) {
+			margin: 0 auto 36px;
+			width: 70%;
+		}
+	}
+
 	&-cards {
+		position: relative;
+		top: 0;
+		left: 0;
 		display: flex;
-		justify-content: space-between;
-		gap: 40px;
+		gap: calc(40 / 1170) * 100%;
 		margin-bottom: 36px;
+
+		transition: left 300ms;
+
+		@media screen and (max-width: 1000px) {
+			margin: 0 auto 36px;
+			gap: 0;
+		}
+
 		&__card {
-			flex: 0 1 565px;
+			flex: 0 0 calc(565 / 1170) * 100%;
+			@media screen and (max-width: 1000px) {
+				flex-basis: 100%;
+			}
 		}
 	}
 
@@ -34,6 +55,7 @@
 		}
 
 		&__img {
+			object-fit: cover;
 		}
 
 		&__description {
@@ -95,20 +117,32 @@
 	}
 
 	&__button {
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: $colorBrown;
+		background-image: url('../images/testimonial-btn.svg');
 	}
 
 	&__button:hover {
+		background-color: #121315;
+		background-image: url('../images/testimonial-btn-active.svg');
 	}
 
 	&__btn-left {
+		transform: rotate(180deg);
 	}
 
 	&__btn-left:hover {
+		transform: none;
 	}
 
 	&__btn-right {
 	}
 
 	&__btn-right:hover {
+		transform: rotate(180deg);
 	}
 }
