@@ -1,11 +1,23 @@
 'use strict';
 
+// const sliders = document.querySelectorAll('.slider');
+// for(slider of sliders){
+
+// }
+// Components
 const slider = document.querySelector('.slider');
 const sliderWindow = document.querySelector('.slider__window');
 const slides = document.querySelector('.slides');
 const slide = document.querySelectorAll('.slide');
-const indicatorBlock = document.querySelector('.slider__indicators');
 
+// const indicatorBlock = document.querySelector('.slider__indicators');
+// Creation of indicators block
+const indicatorBlock = document.createElement('div');
+indicatorBlock.classList.add('slider__indicators');
+
+slider.append(indicatorBlock);
+
+// Slides creation
 slide.forEach(() => {
 	let newIndicator = document.createElement('div');
 	newIndicator.classList.add('slider__indicator');
@@ -26,7 +38,6 @@ let isMousePressed = false;
 let mouseX;
 
 sliderWindow.addEventListener('touchstart', (event) => {
-	// event.preventDefault();
 	slides.style.transition = 'none';
 	isMousePressed = true;
 	initialPoint = event.touches[0].clientX - rectSliderWindow.left;

@@ -1049,6 +1049,7 @@ main {
 }
 .slider__indicators {
   display: none;
+  margin: 40px 0;
 }
 @media screen and (max-width: 768px) {
   .slider__indicators {

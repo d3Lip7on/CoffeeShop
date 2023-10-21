@@ -35,6 +35,7 @@ let containerPosition = 0;
 let cardWidth = testimonialCards[0].clientWidth;
 let containerWidth = cardWidth * testimonialCards.length + gap * (testimonialCards.length - 1);
 
+// Number of people definition
 let addedCards = 0;
 if (window.innerWidth > 1000) {
 	addedCards = 2;
@@ -45,6 +46,7 @@ if (window.innerWidth > 1000) {
 }
 activePart.style.width = (+numberOfPeople.textContent / 6) * 100 + '%';
 
+// Handlers
 btnRight.addEventListener('click', (event) => {
 	event.preventDefault();
 	containerPosition = containerPosition - testimonialWindowRect.width - gap;

@@ -2,6 +2,7 @@
 	margin: 0 auto;
 	&__indicators {
 		display: none;
+		margin: 40px 0;
 		@media screen and (max-width: 768px) {
 			display: flex;
 			justify-content: center;
