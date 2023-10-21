@@ -1,6 +1,4 @@
 .popular-product {
-	&__slider {
-	}
 	&__inner {
 		text-align: center;
 		padding-bottom: 140px;
@@ -25,9 +23,6 @@
 	}
 
 	&__items {
-		display: flex;
-		justify-content: space-between;
-		gap: 20px;
 		margin-bottom: 56px;
 		@media screen and (max-width: 768px) {
 			margin-bottom: 20px;
@@ -37,8 +32,6 @@
 	&__item {
 		background-color: #121315;
 		padding: 48px 48px 36px 48px;
-		flex: 0 1 366px;
-		min-width: 200px;
 
 		@media screen and (max-width: 900px) {
 			padding: 40px;
@@ -46,10 +39,7 @@
 		@media screen and (max-width: 800px) {
 			padding: 30px;
 		}
-		@media screen and (max-width: 768px) {
-			flex-basis: 300px;
-			flex-shrink: 0;
-		}
+
 		&-img {
 			margin-bottom: 37px;
 			width: 100%;
