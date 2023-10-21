@@ -9,17 +9,9 @@
 	}
 
 	&__subtitle {
-		margin-bottom: 12px;
 	}
 
 	&__title {
-		margin-bottom: 104px;
-		@media screen and (max-width: 768px) {
-			margin-bottom: 60px;
-		}
-		@media screen and (max-width: 460px) {
-			margin-bottom: 40px;
-		}
 	}
 
 	&__items {

@@ -63,10 +63,12 @@ main {
   font-size: 3rem;
   font-weight: 400;
   line-height: 130%;
+  margin-bottom: 56px;
 }
 @media screen and (max-width: 768px) {
   .title {
     font-size: 2.5rem;
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -77,6 +79,7 @@ main {
 @media screen and (max-width: 460px) {
   .title {
     font-size: 1.5rem;
+    margin-bottom: 20px;
   }
 }
 
@@ -85,6 +88,7 @@ main {
   font-family: "Urbanist", sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
+  margin-bottom: 12px;
 }
 
 .description {
@@ -497,22 +501,6 @@ main {
     padding-bottom: 80px;
   }
 }
-.popular-product__subtitle {
-  margin-bottom: 12px;
-}
-.popular-product__title {
-  margin-bottom: 104px;
-}
-@media screen and (max-width: 768px) {
-  .popular-product__title {
-    margin-bottom: 60px;
-  }
-}
-@media screen and (max-width: 460px) {
-  .popular-product__title {
-    margin-bottom: 40px;
-  }
-}
 .popular-product__items {
   margin-bottom: 56px;
 }
@@ -678,11 +666,9 @@ main {
 }
 .coffee-menu__subtitle {
   text-align: center;
-  margin-bottom: 12px;
 }
 .coffee-menu__title {
   text-align: center;
-  margin-bottom: 56px;
 }
 @media screen and (max-width: 1189px) {
   .coffee-menu__menu {
@@ -800,11 +786,9 @@ main {
 }
 .testimonial__title {
   text-align: center;
-  margin-bottom: 60px;
 }
 .testimonial__subtitle {
   text-align: center;
-  margin-bottom: 12px;
 }
 .testimonial__window {
   overflow: hidden;
@@ -1001,17 +985,6 @@ main {
     padding: 50px 30px;
   }
 }
-.reservation__subtitle {
-  margin-bottom: 12px;
-}
-.reservation__title {
-  margin-bottom: 56px;
-}
-@media screen and (max-width: 460px) {
-  .reservation__title {
-    margin-bottom: 30px;
-  }
-}
 .reservation__inputs {
   margin-bottom: 56px;
 }
@@ -1033,6 +1006,63 @@ main {
   margin: 0 auto;
 }
 
+.news__inner {
+  text-align: center;
+  padding-bottom: 140px;
+}
+@media screen and (max-width: 768px) {
+  .news__inner {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .news__inner {
+    padding-bottom: 60px;
+  }
+}
+.news__card {
+  background: #1c1814;
+}
+.news__content {
+  padding: 20px 24px;
+}
+.news__img {
+  width: 100%;
+}
+.news__info {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: normal;
+}
+.news__author span {
+  color: #c99e71;
+}
+.news__text {
+  color: #fff;
+  font-family: "Righteous", cursive;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.news__link {
+  display: flex;
+  gap: 8px;
+}
+.news__read-more {
+  color: #c99e71;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: normal;
+}
 .slider {
   margin: 0 auto;
 }
