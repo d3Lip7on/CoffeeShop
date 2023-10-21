@@ -127,6 +127,11 @@ main {
   background-color: #bb854c;
 }
 
+@media (hover: none) {
+  .button {
+    background-color: #c99e71;
+  }
+}
 .burger {
   display: none;
   background-color: transparent;
@@ -158,6 +163,7 @@ main {
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 180%;
+  text-transform: capitalize;
 }
 @media screen and (max-width: 460px) {
   .input {
@@ -813,11 +819,17 @@ main {
 }
 .testimonial__window {
   overflow: hidden;
+  margin-bottom: 36px;
 }
 @media screen and (max-width: 1000px) {
   .testimonial__window {
-    margin: 0 auto 36px;
+    margin: 0 auto 40px;
     width: 70%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .testimonial__window {
+    margin-bottom: 20px;
   }
 }
 .testimonial-cards {
@@ -826,12 +838,10 @@ main {
   left: 0;
   display: flex;
   gap: 3.4188034188%;
-  margin-bottom: 36px;
   transition: left 300ms;
 }
 @media screen and (max-width: 1000px) {
   .testimonial-cards {
-    margin: 0 auto 36px;
     gap: 0;
   }
 }
@@ -847,19 +857,32 @@ main {
   background: #1c1814;
   padding: 40px;
 }
+@media screen and (max-width: 400px) {
+  .testimonial-card {
+    padding: 20px;
+  }
+}
 .testimonial-card__content {
   display: flex;
   justify-content: space-between;
   gap: 15px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 550px) {
+  .testimonial-card__content {
+    flex-direction: column;
+  }
+}
 .testimonial-card__img {
-  object-fit: cover;
+  object-fit: contain;
+  object-position: top;
 }
 .testimonial-card__additional-info {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .testimonial-card__name {
   margin-bottom: 4px;
@@ -880,7 +903,18 @@ main {
 .testimonial__nav {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .testimonial__nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .testimonial__nav {
+    gap: 20px;
+  }
 }
 .testimonial__number-of-people {
   color: #c99e71;
@@ -897,14 +931,14 @@ main {
   background: #1c1814;
   position: relative;
 }
-.testimonial__indicator::before {
-  content: "";
+.testimonial__indicator > span {
   width: 50px;
   height: 4px;
   position: absolute;
   top: 0;
   left: 0;
   background-color: #c99e71;
+  transition: width 200ms;
 }
 .testimonial__buttons {
   display: flex;

@@ -72,6 +72,16 @@ main {
 	&:hover {
 		background-color: darken($colorBrown, 10%);
 	}
+
+	// &_active {
+	// 	background-color: darken($colorBrown, 10%);
+	// }
+}
+
+@media (hover: none) {
+	.button {
+		background-color: $colorBrown;
+	}
 }
 
 .burger {
@@ -100,6 +110,7 @@ main {
 	background: #14110e;
 	padding: 16px 20px;
 	@include text($colorGrey, $urbanist, 18px, 600, 180%);
+	text-transform: capitalize;
 
 	@media screen and (max-width: 460px) {
 		padding: 10px 12px;
