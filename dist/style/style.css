@@ -42,6 +42,19 @@ button {
 main {
   background-color: #14110e;
 }
+main section > div {
+  padding: 70px 0;
+}
+@media screen and (max-width: 768px) {
+  main section > div {
+    padding: 50px 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  main section > div {
+    padding: 30px 0;
+  }
+}
 
 .container {
   max-width: 1170px;
@@ -346,24 +359,6 @@ main {
 .advantages {
   background-color: #14110e;
 }
-.advantages__inner {
-  padding: 140px 0;
-}
-@media screen and (max-width: 900px) {
-  .advantages__inner__inner {
-    padding: 100px 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .advantages__inner {
-    padding: 60px 0;
-  }
-}
-@media screen and (max-width: 400px) {
-  .advantages__inner {
-    padding: 40px 0;
-  }
-}
 .advantages__cards {
   display: flex;
   gap: 36px;
@@ -416,18 +411,12 @@ main {
 .history__inner {
   display: grid;
   gap: 32px;
-  padding-bottom: 140px;
   grid-template-columns: 298px 298px 510px;
 }
 @media screen and (max-width: 1220px) {
   .history__inner {
     justify-content: center;
     grid-template-columns: minmax(100px, 298px) minmax(100px, 298px);
-  }
-}
-@media screen and (max-width: 768px) {
-  .history__inner {
-    padding-bottom: 80px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -494,12 +483,6 @@ main {
 
 .popular-product__inner {
   text-align: center;
-  padding-bottom: 140px;
-}
-@media screen and (max-width: 768px) {
-  .popular-product__inner {
-    padding-bottom: 80px;
-  }
 }
 .popular-product__items {
   margin-bottom: 56px;
@@ -651,19 +634,6 @@ main {
   }
 }
 
-.coffee-menu__inner {
-  padding: 140px 0;
-}
-@media screen and (max-width: 768px) {
-  .coffee-menu__inner {
-    padding: 100px 0;
-  }
-}
-@media screen and (max-width: 460px) {
-  .coffee-menu__inner {
-    padding: 60px 0;
-  }
-}
 .coffee-menu__subtitle {
   text-align: center;
 }
@@ -771,19 +741,6 @@ main {
   }
 }
 
-.testimonial__inner {
-  padding-bottom: 145px;
-}
-@media screen and (max-width: 768px) {
-  .testimonial__inner {
-    padding-bottom: 100px;
-  }
-}
-@media screen and (max-width: 460px) {
-  .testimonial__inner {
-    padding-bottom: 60px;
-  }
-}
 .testimonial__title {
   text-align: center;
 }
@@ -944,21 +901,10 @@ main {
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
-  padding-bottom: 140px;
 }
 @media screen and (max-width: 1190px) {
   .reservation__inner {
     gap: 30px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .reservation__inner {
-    padding-bottom: 100px;
-  }
-}
-@media screen and (max-width: 460px) {
-  .reservation__inner {
-    padding-bottom: 60px;
   }
 }
 .reservation__map {
@@ -1008,17 +954,6 @@ main {
 
 .news__inner {
   text-align: center;
-  padding-bottom: 140px;
-}
-@media screen and (max-width: 768px) {
-  .news__inner {
-    padding-bottom: 100px;
-  }
-}
-@media screen and (max-width: 460px) {
-  .news__inner {
-    padding-bottom: 60px;
-  }
 }
 .news__card {
   background: #1c1814;

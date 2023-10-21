@@ -1,14 +1,5 @@
 .coffee-menu {
 	&__inner {
-		padding: 140px 0;
-
-		@media screen and (max-width: 768px) {
-			padding: 100px 0;
-		}
-
-		@media screen and (max-width: 460px) {
-			padding: 60px 0;
-		}
 	}
 
 	&__subtitle {

@@ -5,16 +5,11 @@
 	&__inner {
 		display: grid;
 		gap: 32px;
-		padding-bottom: 140px;
 		grid-template-columns: 298px 298px 510px;
 
 		@media screen and (max-width: 1220px) {
 			justify-content: center;
 			grid-template-columns: minmax(100px, 298px) minmax(100px, 298px);
-		}
-
-		@media screen and (max-width: 768px) {
-			padding-bottom: 80px;
 		}
 
 		@media screen and (max-width: 500px) {
