@@ -10,6 +10,8 @@
 
 	&__map {
 		flex: 0 1 585px;
+		width: 100%;
+
 		@media screen and (max-width: 1190px) {
 			height: 500px;
 		}

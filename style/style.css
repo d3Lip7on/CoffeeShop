@@ -909,6 +909,7 @@ main section > div {
 }
 .reservation__map {
   flex: 0 1 585px;
+  width: 100%;
 }
 @media screen and (max-width: 1190px) {
   .reservation__map {
@@ -1112,7 +1113,7 @@ main section > div {
 }
 @media screen and (max-width: 768px) {
   .slider__window {
-    width: 300px;
+    max-width: 300px;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -1134,11 +1135,10 @@ main section > div {
 
 .slide {
   flex: 0 1 366px;
-  min-width: 200px;
 }
 @media screen and (max-width: 768px) {
   .slide {
-    flex-basis: 300px;
+    max-width: 300px;
     flex-shrink: 0;
   }
 }
