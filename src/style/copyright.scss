@@ -1,0 +1,8 @@
+.copyright {
+	background: #1c1814;
+	padding: 30px 0;
+	> p {
+		@include text($colorWhite, $urbanist, 14px, 500, 180%);
+		text-align: center;
+	}
+}

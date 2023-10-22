@@ -998,6 +998,67 @@ main section > div {
   font-weight: 500;
   line-height: normal;
 }
+.footer {
+  background: #14110e;
+}
+.footer__inner {
+  padding: 70px 0;
+}
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.footer__menu > ul {
+  display: flex;
+  gap: 40px;
+}
+.footer__menu > ul > li {
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+.footer__form {
+  position: relative;
+}
+.footer__input-email {
+  width: 328px;
+  height: 72px;
+  border-radius: 36px;
+  background: #1c1814;
+  padding: 20px 30px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Urbanist", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 180%;
+}
+.footer__button {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #c99e71;
+}
+
+.copyright {
+  background: #1c1814;
+  padding: 30px 0;
+}
+.copyright > p {
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 180%;
+  text-align: center;
+}
+
 .slider {
   margin: 0 auto;
 }

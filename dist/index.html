@@ -23,11 +23,11 @@
 				</button>
 				<nav class="header-menu">
 					<ul class="header-menu-list">
-						<li class="header-menu__item"><a href="#">Home</a></li>
-						<li class="header-menu__item"><a href="#">About</a></li>
-						<li class="header-menu__item"><a href="#">Menu</a></li>
+						<li class="header-menu__item"><a href="#home">Home</a></li>
+						<li class="header-menu__item"><a href="#about">About</a></li>
+						<li class="header-menu__item"><a href="#menu">Menu</a></li>
 						<li class="header-menu__item">
-							<a href="#">Reservation</a>
+							<a href="#reservation">Reservation</a>
 						</li>
 					</ul>
 				</nav>
@@ -52,7 +52,7 @@
 		<!-- Main -->
 		<main>
 			<!-- Top section -->
-			<section class="top">
+			<section id="home" class="top">
 				<div class="container">
 					<div class="top__inner">
 						<div class="top__content">
@@ -100,7 +100,7 @@
 				</div>
 			</section>
 			<!-- History section -->
-			<section class="history">
+			<section id="about" class="history">
 				<div class="container history__inner">
 					<img src="images/history-1.jpg" class="history__img-1" alt="" /><img
 						src="images/history-2.jpg"
@@ -206,7 +206,7 @@
 				</div>
 			</section>
 			<!-- Coffee menu section -->
-			<section class="coffee-menu">
+			<section id="menu" class="coffee-menu">
 				<div class="container coffee-menu__inner">
 					<div class="subtitle coffee-menu__subtitle">Menu</div>
 					<div class="title coffee-menu__title">Coffee popular menu</div>
@@ -374,7 +374,7 @@
 				</div>
 			</section>
 			<!-- Reservation  section -->
-			<section class="reservation">
+			<section id="reservation" class="reservation">
 				<div class="container reservation__inner">
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.83988656217!2d-0.2664030361512999!3d51.52873980507674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z0JvQvtC90LTQvtC9LCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2spl!4v1697377844955!5m2!1sru!2spl"
@@ -452,6 +452,31 @@
 				</div>
 			</section>
 		</main>
+		<footer class="footer">
+			<div class="container footer__inner">
+				<div class="footer__navigation">
+					<img src="images/Logo.svg" alt="" class="logo footer__logo" />
+					<nav class="footer__menu">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#reservation">Rerervation</a></li>
+							<li><a href="#menu">Menu</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#">Pages</a></li>
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">Blogs</a></li>
+						</ul>
+					</nav>
+					<form action="#" class="footer__form">
+						<input type="email" class="footer__input-email" placeholder="Enter Your Email" />
+						<button type="submit" class="footer__button"><img src="images/footer-arrow-right.svg" alt="" /></button>
+					</form>
+				</div>
+			</div>
+		</footer>
+		<section class="copyright">
+			<p>e-Tennis © 2021. All rights reserved.</p>
+		</section>
 		<script src="JS/burger.js"></script>
 		<script src="JS/coffee-menu.js"></script>
 		<script src="JS/slider.js"></script>

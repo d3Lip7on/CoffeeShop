@@ -1,0 +1,51 @@
+.footer {
+	background: #14110e;
+	&__inner {
+		padding: 70px 0;
+	}
+
+	&__navigation {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+		align-items: center;
+	}
+
+	&__logo {
+	}
+
+	&__menu {
+		> ul {
+			display: flex;
+			gap: 40px;
+
+			> li {
+				@include text($colorWhite, $urbanist, 20px, 500, 100%);
+			}
+		}
+	}
+
+	&__form {
+		position: relative;
+	}
+
+	&__input-email {
+		width: 328px;
+		height: 72px;
+		border-radius: 36px;
+		background: #1c1814;
+		padding: 20px 30px;
+
+		@include text($colorGrey, $urbanist, 16px, 500, 180%);
+	}
+
+	&__button {
+		position: absolute;
+		right: 12px;
+		top: 12px;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: $colorBrown;
+	}
+}
