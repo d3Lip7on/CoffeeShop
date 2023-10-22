@@ -754,7 +754,7 @@ main section > div {
 @media screen and (max-width: 1000px) {
   .testimonial__window {
     margin: 0 auto 40px;
-    width: 70%;
+    width: 90%;
   }
 }
 @media screen and (max-width: 460px) {

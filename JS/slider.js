@@ -32,6 +32,7 @@ for (let slider of sliders) {
 	let mouseX;
 
 	sliderWindow.addEventListener('touchstart', (event) => {
+		event.preventDefault();
 		slides.style.transition = 'none';
 		isMousePressed = true;
 		initialPoint = event.touches[0].clientX - rectSliderWindow.left;
@@ -61,6 +62,7 @@ for (let slider of sliders) {
 	});
 
 	slider.addEventListener('touchmove', (event) => {
+		event.preventDefault();
 		if (!isMousePressed) return;
 		mouseX = event.touches[0].clientX - rectSliderWindow.left;
 		slides.style.left = currentSlidesPoint + mouseX - initialPoint + 'px';
