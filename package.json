@@ -6,7 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"sass": "sass src/style/style.scss dist/style/style.css"
+		"sass": "sass src/style/style.scss style/style.css"
 	},
 	"author": "Vladislav Vagner",
 	"license": "ISC",
